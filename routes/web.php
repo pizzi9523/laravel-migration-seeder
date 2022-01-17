@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', 'TravelPackageController@index')->name('welcome');
+Route::get('blog', 'PostController@index')->name('blog');
+Route::get('blog/{post}', 'PostController@show')->name('post');
