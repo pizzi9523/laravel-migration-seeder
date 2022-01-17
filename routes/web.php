@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'TravelPackageController@index')->name('welcome');
+Route::get('/', 'WelcomeController@index')->name('welcome');
+
+Route::get('home', 'TravelPackageController@index')->name('home');
 Route::get('blog', 'PostController@index')->name('blog');
 Route::get('blog/{post}', 'PostController@show')->name('post');
