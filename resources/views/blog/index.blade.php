@@ -5,6 +5,7 @@
 
 @section('content')
    
+<h2 class="text-center py-5">My Blog</h2>
     <div class="container py-5">
         <div class="row">
             @foreach ($posts as $post)
@@ -36,7 +37,7 @@
     </div>
     
 
-    <div class="my_pagination">
+    <div class="my_pagination mb-5 ms-3">
         {{$posts->links()}}
     </div>
 @endsection

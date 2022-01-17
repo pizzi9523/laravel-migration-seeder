@@ -4,15 +4,24 @@
 
 
 @section('content')
-   
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">{{$post->title}}</h5>
-    <p class="card-text">{{$post->text}}</p>
-    <p class="card-text">{{$post->author}}</p>
+<section class="post">
+	<div class="container py-4">
+		<h1 class="h1 text-center" id="pageHeaderTitle">{{$post->author}}</h1>
 
-    <p class="card-text"><small class="text-muted">{{$post->date}}</small></p>
-  </div>
-  <img src="{{$post->image}}" class="img-fluid" alt="..." >
-</div>
+		<article class="postcard dark blue">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="{{$post->image}}" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title blue"><a href="#">{{$post->title}}</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>{{$post->date}}
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">{{$post->text}}</div>
+				
+			</div>
+		</article>
 @endsection

@@ -9,7 +9,7 @@ class TravelPackageController extends Controller
 {
     public function index()
     {
-        $packages = TravelPackage::all();
+        $packages = TravelPackage::paginate(12);
         return view('home', compact('packages'));
     }
 }

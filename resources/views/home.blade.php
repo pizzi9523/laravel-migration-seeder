@@ -29,5 +29,9 @@
         </div>
     </div>
 
+    <div class="my_pagination my-5 ms-3">
+        {{$packages->links()}}
+    </div>
+
 @endsection
 
