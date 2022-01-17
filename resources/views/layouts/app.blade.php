@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Travel Agency</title>
+    <title>Travel Agency | @yield('page-title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -13,12 +13,18 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
+    <!-- Scripts -->
+    <script src="{{asset('js/app.js')}}" defer></script>
+
+
 </head>
 
 <body>
     <main>
         @yield('content')
     </main>
+
+
 </body>
 
 </html>
