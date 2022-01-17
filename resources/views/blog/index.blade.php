@@ -5,7 +5,7 @@
 
 @section('content')
    
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
             @foreach ($posts as $post)
         <div class="col-6">
@@ -20,7 +20,7 @@
                             <h5 class="card-title">{{$post->title}}</h5>
                             <p class="card-text">{{$post->text}}</p>
                             <p class="card-text">{{$post->author}}</p>
-                            <p class="card-text">{{$post->date}}<small class="text-muted">Last updated 3 mins ago</small></p>
+                            <p class="card-text"><small class="text-muted">{{$post->date}}</small></p>
                         </div>
                      </div>
                 </div>
