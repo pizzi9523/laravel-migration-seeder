@@ -65,7 +65,7 @@ class TravelPackageSeeder extends Seeder
             $_package->save();
         };
 
-        for ($i = 0; $i < 84; $i++) {
+        for ($i = 0; $i < 48; $i++) {
             $_package = new TravelPackage();
             $_package->name = $faker->name();
             $_package->description = $faker->paragraph();
