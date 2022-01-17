@@ -10,7 +10,7 @@
     <div class="row my-5">
         @foreach($packages as $package)
             <div class="col text-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card m-auto mb-5" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">{{$package->name}}</h5>
                         <p class="card-text">{{$package->description}}</p>
