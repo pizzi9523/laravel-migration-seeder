@@ -16,11 +16,12 @@ class CreateTravelPackagesTable extends Migration
         Schema::create('travel_packages', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('departure_from');
+            $table->text('description')->nullable();
+            $table->string('departure_from')->nullable();
             $table->string('destination');
-            $table->date('departure_date');
-            $table->date('return_date');
-            $table->decimal('price', 7, 2);
+            $table->date('departure_date')->nullable();
+            $table->date('return_date')->nullable();
+            $table->decimal('price', 7, 2)->nullable();
             $table->timestamps();
         });
     }
