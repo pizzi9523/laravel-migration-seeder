@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\TravelPackage;
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class TravelPackageController extends Controller
 {
     public function index()
     {
